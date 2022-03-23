@@ -11,11 +11,11 @@ public class carpet_button : MonoBehaviour
     }
 
     // Update is called once per frame
-    void OnCollisionEnter(collider other) {
+    void OnCollisionEnter(Collider other) {
         
     }
 
-    void OnCollisionExit(collider other) {
+    void OnCollisionExit(Collider other) {
         
     }
 }
