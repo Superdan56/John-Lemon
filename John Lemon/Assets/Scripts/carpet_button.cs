@@ -14,13 +14,14 @@ public class carpet_button : MonoBehaviour
     {
         collisionCounter = 0;
         buttonPressed = false;
+        m_AudioSource = GetComponent<AudioSource>();
     }
 
     void FixedUpdate() {
         if(collisionCounter >= 1) {
             buttonPressed = true;
         }
-        else if(collisionCounter = 0) {
+        else if(collisionCounter < 1) {
             buttonPressed = false;
         }
 
@@ -29,14 +30,17 @@ public class carpet_button : MonoBehaviour
                 m_AudioSource.Play();
             }
         }
+        else {
+            m_AudioSource.Stop();
+        }
     }
 
     // Update is called once per frame
-    void OnCollisionEnter(Collider other) {
+    void OnTriggerEnter(Collider other) {
         collisionCounter += 1;
     }
 
-    void OnCollisionExit(Collider other) {
+    void OnTriggerExit(Collider other) {
         collisionCounter -= 1;
     }
 }
