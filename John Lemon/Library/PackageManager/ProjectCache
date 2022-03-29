@@ -20,7 +20,7 @@ m_EmbeddedPackageManifests:
 m_LocalPackages:
   m_LocalFileStatus: []
 m_ProjectPath: C:/Users/Owner/Documents/GitHub/John-Lemon/John Lemon/Packages
-m_EditorVersion: 2021.2.16f1 (559fc0ec6670)
+m_EditorVersion: 2021.2.17f1 (efb8f635e7b1)
 m_ResolvedPackages:
 - packageId: com.unity.2d.sprite@1.0.0
   testable: 0
@@ -631,9 +631,11 @@ m_ResolvedPackages:
     - 3.0.9
     - 3.0.10
     - 3.0.12
+    - 3.0.13
     compatible:
     - 3.0.12
-    verified: 3.0.12
+    - 3.0.13
+    verified: 3.0.13
   dependencies:
   - name: com.unity.ext.nunit
     version: 1.0.6
