@@ -1154,7 +1154,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
@@ -1890,7 +1890,7 @@ Transform:
   - {fileID: 1043041570}
   - {fileID: 1753668369}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2110433409
 GameObject:
@@ -1953,6 +1953,31 @@ PrefabInstance:
       propertyPath: countText
       value: 
       objectReference: {fileID: 514356988}
+    - target: {fileID: 5215373985681014853, guid: 818a82e636395bf4d90c240f1415d847,
+        type: 3}
+      propertyPath: exitAudio
+      value: 
+      objectReference: {fileID: 1043041571}
+    - target: {fileID: 5215373985681014853, guid: 818a82e636395bf4d90c240f1415d847,
+        type: 3}
+      propertyPath: caughtAudio
+      value: 
+      objectReference: {fileID: 1753668370}
+    - target: {fileID: 5215373985681014853, guid: 818a82e636395bf4d90c240f1415d847,
+        type: 3}
+      propertyPath: winTextObject
+      value: 
+      objectReference: {fileID: 574519711}
+    - target: {fileID: 5215373985681014853, guid: 818a82e636395bf4d90c240f1415d847,
+        type: 3}
+      propertyPath: exitBackgroundImageCanvasGroup
+      value: 
+      objectReference: {fileID: 624780810}
+    - target: {fileID: 5215373985681014853, guid: 818a82e636395bf4d90c240f1415d847,
+        type: 3}
+      propertyPath: caughtBackgroundImageCanvasGroup
+      value: 
+      objectReference: {fileID: 574519712}
     - target: {fileID: 6336789565852970058, guid: 818a82e636395bf4d90c240f1415d847,
         type: 3}
       propertyPath: m_Controller

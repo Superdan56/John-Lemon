@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour {
-    public TextMeshProUGUI countText; 
+
     public Vector3 m_Movement;
     public Animator m_Animator;
     public float turnSpeed = 20f;
@@ -14,6 +15,17 @@ public class PlayerMovement : MonoBehaviour {
     
     private bool detected;
     private int detectCounter;
+    public TextMeshProUGUI countText;
+
+    public float fadeDuration = 1f;
+    public float displayImageDuration = 1f;
+    public CanvasGroup exitBackgroundImageCanvasGroup;
+    public AudioSource exitAudio;
+    public CanvasGroup caughtBackgroundImageCanvasGroup;
+    public AudioSource caughtAudio;
+    
+    float m_Timer;
+    bool m_HasAudioPlayed;
 
     // Start is called before the first frame update
     void Start() {
@@ -71,5 +83,33 @@ public class PlayerMovement : MonoBehaviour {
 
     void SetCountText() {
         countText.text = "Detection: " + detectCounter.ToString();
+
+        if (detectCounter >= 1000) {
+            EndLevel(caughtBackgroundImageCanvasGroup, true, caughtAudio);
+        }
+    }
+
+    void EndLevel (CanvasGroup imageCanvasGroup, bool doRestart, AudioSource audioSource)
+    {
+        if (!m_HasAudioPlayed)
+        {
+            audioSource.Play();
+            m_HasAudioPlayed = true;
+        }
+            
+        m_Timer += Time.deltaTime;
+        imageCanvasGroup.alpha = m_Timer / fadeDuration;
+
+        if (m_Timer > fadeDuration + displayImageDuration)
+        {
+            if (doRestart)
+            {
+                SceneManager.LoadScene (0);
+            }
+            else
+            {
+                Application.Quit ();
+            }
+        }
     }
 }
