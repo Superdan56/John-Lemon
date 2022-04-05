@@ -80,6 +80,13 @@ public class PlayerMovement : MonoBehaviour {
             detected = true;
         }
     }
+    
+    void OnTriggerExit(Collider Other) {
+        
+        if(Other.GetComponent<Collider>().tag == "Switch") {
+            detected = false;
+        }
+    }
 
     void SetCountText() {
         countText.text = "Detection: " + detectCounter.ToString();
