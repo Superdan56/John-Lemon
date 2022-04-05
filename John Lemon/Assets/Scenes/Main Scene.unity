@@ -490,7 +490,7 @@ GameObject:
   - component: {fileID: 514356989}
   - component: {fileID: 514356988}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Detection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1948,6 +1948,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5215373985681014853, guid: 818a82e636395bf4d90c240f1415d847,
+        type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 514356988}
     - target: {fileID: 6336789565852970058, guid: 818a82e636395bf4d90c240f1415d847,
         type: 3}
       propertyPath: m_Controller
