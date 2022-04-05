@@ -18,7 +18,7 @@ public class Door_Script : MonoBehaviour
     {
         if(other.GetComponent<Collider>().tag == "Switch") {
             
-            m_Movement.Set(400f, 0f, 0f);
+            m_Movement.Set(40000f, 0f, 0f);
             m_Movement.Normalize ();
             m_Rigidbody.MovePosition (m_Rigidbody.position + m_Movement);
         }
