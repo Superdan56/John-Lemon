@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 473875965285713095}
-  - component: {fileID: 473875965293210407}
   - component: {fileID: 1081372572254979066}
   - component: {fileID: 1684383795142249164}
+  - component: {fileID: 473875965293210407}
   m_Layer: 0
   m_Name: Gargoyle
   m_TagString: Untagged
@@ -36,26 +36,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &473875965293210407
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 473875965285816551}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: d3312d02a690eda48bd6807bf5c78084, type: 3}
-  m_Controller: {fileID: 9100000, guid: b399ed9dd9177ac448c33c8439ff9813, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 0
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!54 &1081372572254979066
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -85,6 +65,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.8124039, z: 1}
   m_Center: {x: 0, y: 1.6980134, z: 0}
+--- !u!95 &473875965293210407
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473875965285816551}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: d3312d02a690eda48bd6807bf5c78084, type: 3}
+  m_Controller: {fileID: 9100000, guid: b399ed9dd9177ac448c33c8439ff9813, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 0
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &473875965285816675
 GameObject:
   m_ObjectHideFlags: 0
