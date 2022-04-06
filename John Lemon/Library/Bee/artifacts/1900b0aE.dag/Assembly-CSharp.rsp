@@ -364,6 +364,7 @@
 "Assets/Scripts/Door_1.cs"
 "Assets/Scripts/Door_Script.cs"
 "Assets/Scripts/GameEnding.cs"
+"Assets/Scripts/IdolButtonScript.cs"
 "Assets/Scripts/LightFlicker.cs"
 "Assets/Scripts/Observer.cs"
 "Assets/Scripts/PlayerMovement.cs"

@@ -14,10 +14,9 @@ public class Door_Script : MonoBehaviour
     }
 
     // Update is called once per frame
-    void OnTriggerEnter(Collider other)
-    {
-        if(other.GetComponent<Collider>().tag == "Switch") {
-            
+    void OnTriggerEnter(Collider other) {
+        
+        if(other.GetComponent<Collider>().tag == "Switch") {   
             m_Movement.Set(40000f, 0f, 0f);
             m_Movement.Normalize ();
             m_Rigidbody.MovePosition (m_Rigidbody.position + m_Movement);
