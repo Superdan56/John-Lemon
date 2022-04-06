@@ -17,7 +17,7 @@ public class PortrateButtonScript : MonoBehaviour
 
         if(other.GetComponent<Collider>().tag == "Switch") {
             
-            m_Movement.Set(0f, -40f, 0f);
+            m_Movement.Set(40f, 0f, 0f);
             Rb.MovePosition (Rb.position + m_Movement);
         }
         
@@ -27,7 +27,7 @@ public class PortrateButtonScript : MonoBehaviour
         
         if(other.GetComponent<Collider>().tag == "Switch") {
             
-            m_Movement.Set(0f, 40f, 0f);
+            m_Movement.Set(-40f, 0f, 0f);
             Rb.MovePosition (Rb.position + m_Movement);
         }
     }
