@@ -370,6 +370,7 @@
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/Play_button.cs"
 "Assets/Scripts/Quit_button.cs"
+"Assets/Scripts/RugButtonScript.cs"
 "Assets/Scripts/Vision_Script.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
